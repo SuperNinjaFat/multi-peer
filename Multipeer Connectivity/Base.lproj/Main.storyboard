@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multipeer_Connectivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7fD-sd-ubJ">
+                                <rect key="frame" x="106" y="672" width="202" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUP-EA-6NA">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="🐄"/>
+                                        <connections>
+                                            <action selector="sendCow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0J-Fg-lCx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-AP-T6y">
+                                        <rect key="frame" x="74" y="0.0" width="54" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="🎹"/>
+                                        <connections>
+                                            <action selector="sendPiano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvS-MK-TLB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-iC-uJy">
+                                        <rect key="frame" x="148" y="0.0" width="54" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="🔑"/>
+                                        <connections>
+                                            <action selector="sendKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwZ-Ci-CCm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxN-hb-Fyb">
+                                <rect key="frame" x="143" y="634" width="128.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Connection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-bT-plP">
+                                <rect key="frame" x="47" y="68" width="162" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="No_Picture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-ar-lyF">
+                                <rect key="frame" x="36" y="269" width="342" height="182"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lx5-ar-lyF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0cf-jd-tge"/>
+                            <constraint firstItem="zxN-hb-Fyb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="14B-HE-KCD"/>
+                            <constraint firstItem="7fD-sd-ubJ" firstAttribute="top" secondItem="zxN-hb-Fyb" secondAttribute="bottom" constant="8" id="A0q-Wl-3Tl"/>
+                            <constraint firstItem="VSR-bT-plP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="B3Y-pR-vH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7fD-sd-ubJ" secondAttribute="bottom" constant="118" id="IhY-Ed-Rse"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lx5-ar-lyF" secondAttribute="bottom" constant="411" id="JA0-CA-tuz"/>
+                            <constraint firstItem="Lx5-ar-lyF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="cOW-9N-XMJ"/>
+                            <constraint firstItem="7fD-sd-ubJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ekv-G0-6vm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lx5-ar-lyF" secondAttribute="trailing" constant="36" id="gL4-Hb-IdI"/>
+                            <constraint firstItem="Lx5-ar-lyF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="sCL-zw-Bry"/>
+                            <constraint firstItem="VSR-bT-plP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="x7H-0J-g4L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageOutlet" destination="Lx5-ar-lyF" id="Dzs-OG-vUX"/>
+                        <outlet property="labelStatus" destination="VSR-bT-plP" id="6Lf-2m-9db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="No_Picture.jpg" width="52.799999237060547" height="70.319999694824219"/>
+    </resources>
+</document>
